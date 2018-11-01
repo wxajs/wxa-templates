@@ -62,7 +62,7 @@ export default class Index {
 <view class="page">
     <block wx:if="{{!isLoading}}">
         <van-transition show="{{ !isLoading }}" class="section">
-            Hello, This is WXA with Vant!
+            Hello, This is WXA and Vant!
         </van-transition>
 
         <van-tabs type="card" class="section" color="lightblue">

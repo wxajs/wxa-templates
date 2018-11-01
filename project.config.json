@@ -7,14 +7,14 @@
 		"urlCheck": true,
 		"es6": false,
 		"postcss": true,
-		"minified": false,
+		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.2",
 	"appid": "wxaf7296aa719f52e2",
 	"projectname": "wxa-templates",
-	"miniprogramRoot": "base/dist/",
+	"miniprogramRoot": "echart/dist/",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -28,13 +28,23 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "line",
+					"pathName": "pages/line/index"
+				}
+			]
 		}
 	}
 }

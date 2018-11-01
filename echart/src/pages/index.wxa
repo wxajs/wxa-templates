@@ -1,0 +1,96 @@
+<script>
+import {Page} from '@wxa/core';
+
+@Page
+export default class Index {
+    async onLoad() {
+        console.log(this);
+        console.log(`hello ${this.app.globalData.userInfo}, this is wxa page`);
+
+        let slogan = await this.foo();
+
+        console.log(slogan);
+    }
+
+    async foo() {
+        return await Promise.resolve('Hey, Async/Await is usabled');
+    }
+}
+</script>
+
+<config>
+{
+    "navigationBarTitleText": "首页"
+}
+</config>
+
+<template>
+<view class="page">
+    <view class="animated pulse">
+        Hello, This is Wxa and Echart!
+    </view>
+    <button type="primary" loading="{{loading}}" plain="{{plain}}" bindtap="$go" data-path="echarts/pages/index/index"> Get Started </button>
+</view>
+</template>
+
+<style lang="scss">
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+</style>
