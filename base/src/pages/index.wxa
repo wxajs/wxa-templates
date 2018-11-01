@@ -1,11 +1,19 @@
 <script>
-import {wxa, Page} from '@wxa/core';
+import {Page} from '@wxa/core';
 
 @Page
 export default class Index {
-    onLoad() {
-        console.log(this)
+    async onLoad() {
+        console.log(this);
         console.log(`hello ${this.app.globalData.userInfo}, this is wxa page`);
+
+        let slogan = await this.foo();
+
+        console.log(slogan);
+    }
+
+    async foo() {
+        return await Promise.resolve('Hey, Async/Await is usabled');
     }
 }
 </script>

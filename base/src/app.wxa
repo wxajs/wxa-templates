@@ -1,10 +1,10 @@
 <script>
-import {wxa, App} from '@wxa/core';
+import {App} from '@wxa/core';
 
 @App
 export default class Main {
     globalData= {
-        userInfo: 'Genuifx'
+        userInfo: 'Genuifx',
     }
 }
 </script>
