@@ -3,6 +3,9 @@ import {Page} from '@wxa/core';
 
 @Page
 export default class Index {
+    data = {
+    }
+    
     async onLoad() {
         console.log(this);
         console.log(`hello ${this.app.globalData.userInfo}, this is wxa page`);
@@ -29,7 +32,7 @@ export default class Index {
     <view class="animated pulse">
         Hello, This is Wxa and Echart!
     </view>
-    <button type="primary" loading="{{loading}}" plain="{{plain}}" bindtap="$go" data-path="echarts/pages/index/index"> Get Started </button>
+    <button type="primary" loading="{{loading}}" plain="{{plain}}" bindtap="$go" data-path="/echarts/pages/index/index"> Get Started </button>
 </view>
 </template>
 
@@ -41,6 +44,10 @@ export default class Index {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+button {
+    margin-top: 60rpx;
 }
 
 .animated {

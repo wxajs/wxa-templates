@@ -49,6 +49,8 @@ export default class Main {
 </config>
 
 <style lang="scss">
+@import "./echart.wxss";
+
 page {
     width: 100%;
     height: 100%;

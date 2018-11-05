@@ -14,7 +14,7 @@
 	"libVersion": "2.3.2",
 	"appid": "wxaf7296aa719f52e2",
 	"projectname": "wxa-templates",
-	"miniprogramRoot": "echart/dist/",
+	"miniprogramRoot": "redux/dist/",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -37,14 +37,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "line",
-					"pathName": "pages/line/index"
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }
