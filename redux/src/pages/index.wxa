@@ -12,7 +12,7 @@ export default class Index {
 
     async onLoad() {
         console.log(this);
-        console.log(`hello ${this.app.globalData.userInfo}, this is wxa page`);
+        console.log(`hello ${this.$app.globalData.userInfo}, this is wxa page`);
 
         let slogan = await this.foo();
 
@@ -25,7 +25,7 @@ export default class Index {
 
     @Debounce(100, {leading: false, trailing: true})
     updateUserInfo({detail: {value}}) {
-        this.store.dispatch({type: 'userInfo_update', payload: {name: value}});
+        this.$store.dispatch({type: 'userInfo_update', payload: {name: value}});
     }
 }
 </script>
