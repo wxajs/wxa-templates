@@ -5,7 +5,7 @@ import {Page} from '@wxa/core';
 export default class Index {
     async onLoad() {
         console.log(this);
-        console.log(`hello ${this.$app.globalData.userInfo}, this is wxa page`);
+        console.log(`hello ${this.app.globalData.userInfo}, this is wxa page`);
 
         let slogan = await this.foo();
 
