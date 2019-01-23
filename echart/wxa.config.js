@@ -4,9 +4,9 @@ const CopyPlugin = require('@wxa/plugin-copy');
 let prod = process.env.NODE_ENV === 'production';
 
 // 环境变量
-const envlist = [{
+const envlist = {
     'WXA_ENV': process.env.NODE_ENV || 'development',
-}];
+};
 
 
 module.exports = {
