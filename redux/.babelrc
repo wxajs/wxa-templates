@@ -2,7 +2,7 @@
     "sourceMap": false,
     "presets": ["@babel/preset-env"],
     "plugins": [
-        ["@babel/plugin-transform-runtime", {"corejs": false, "version": "7.1.2"}],
+        ["@babel/plugin-transform-runtime", {"corejs": false, "version": "7.3.1"}],
         ["@babel/plugin-proposal-decorators", {"decoratorsBeforeExport": true}],
         ["@babel/plugin-proposal-class-properties"]
     ],
