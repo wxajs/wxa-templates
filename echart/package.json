@@ -20,11 +20,11 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/runtime": "^7.1.2",
-    "@wxa/compiler-babel": "next",
-    "@wxa/compiler-sass": "next",
-    "@wxa/plugin-copy": "next",
-    "@wxa/plugin-replace": "next",
-    "@wxa/plugin-uglifyjs": "next",
+    "@wxa/compiler-babel": "^2.0.0",
+    "@wxa/compiler-sass": "^2.0.0",
+    "@wxa/plugin-copy": "^2.0.0",
+    "@wxa/plugin-replace": "^2.0.0",
+    "@wxa/plugin-uglifyjs": "^2.0.0",
     "babel-eslint": "^8.2.3",
     "cross-env": "^5.1.6",
     "eslint": "^4.19.1",
@@ -33,7 +33,7 @@
     "vue-eslint-parser": "^3.2.2"
   },
   "dependencies": {
-    "@wxa/core": "next",
+    "@wxa/core": "^2.0.0",
     "regenerator-runtime": "^0.13.1"
   }
 }
