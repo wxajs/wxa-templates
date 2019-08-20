@@ -10,7 +10,7 @@ wxa.use(wxaRedux, {reducers: combineReducers({userInfo})});
 
 @App
 export default class Main {
-    globalData= {
+    globalData = {
         userInfo: 'Genuifx',
     }
 }
