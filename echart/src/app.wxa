@@ -3,7 +3,7 @@ import {App} from '@wxa/core';
 
 @App
 export default class Main {
-    globalData= {
+    globalData = {
         userInfo: 'Genuifx',
     }
 }
