@@ -1,0 +1,36 @@
+<script>
+  import {
+    App,
+  } from '@wxa/core';
+
+  @App
+  export default class Main {
+    globalData = {}
+
+    onLaunch() {
+      if (!wx.cloud) {
+        console.error('请使用 2.2.3 或以上的基础库以使用云能力');
+      } else {
+        // 根据环境id初始化
+        wx.cloud.init({
+          env: 'clondEnv',
+          traceUser: true,
+        });
+      }
+    }
+  }
+</script>
+<config>
+  {
+    "pages": [
+      "pages/index"
+    ],
+    "window": {
+      "backgroundColor": "#ffffff",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTitleText": "wxa cloud template",
+      "navigationBarTextStyle": "black"
+    }
+  }
+</config>
