@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "wxa build --watch",
-    "build": "cross-env NODE_ENV=production wxa build --no-cache"
+    "dev": "wxa2 build --watch",
+    "build": "cross-env NODE_ENV=production wxa2 build --no-cache"
   },
   "keywords": [
     "wxa",
@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "@wxa/core": "^2.0.0",
-    "vant-weapp": "^0.4.5"
+    "vant-weapp": "^0.5.27"
   }
 }

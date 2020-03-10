@@ -1,0 +1,39 @@
+{
+    "name": "wxa-cloud-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "cross-env FOR=sit wxa2 build --watch",
+        "build": "cross-env NODE_ENV=production FOR=sit wxa2 build --no-cache"
+    },
+    "keywords": [
+        "wxa",
+        "wxa2",
+        "cloud",
+        "template"
+    ],
+    "author": "lucaszhu",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/plugin-proposal-decorators": "^7.1.0",
+        "@babel/plugin-transform-runtime": "^7.1.0",
+        "@babel/preset-env": "^7.1.0",
+        "@babel/runtime": "^7.1.2",
+        "@wxa/compiler-babel": "^2.0.0-alpha.e7e06c46",
+        "@wxa/compiler-sass": "^2.0.0-alpha.e7e06c46",
+        "@wxa/plugin-replace": "^2.0.0-alpha.e7e06c46",
+        "@wxa/plugin-uglifyjs": "^2.0.0-alpha.e7e06c46",
+        "babel-eslint": "^8.2.3",
+        "babel-preset-env": "^1.7.0",
+        "cross-env": "^5.1.6",
+        "eslint": "^4.19.1",
+        "eslint-config-google": "^0.9.1",
+        "eslint-plugin-vue": "^4.5.0",
+        "vue-eslint-parser": "^3.2.2"
+    },
+    "dependencies": {
+        "@wxa/core": "^2.0.0-alpha.e7e06c46"
+    }
+}

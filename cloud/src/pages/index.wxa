@@ -1,0 +1,54 @@
+<script>
+    import {
+        Page
+    } from '@wxa/core';
+
+    @Page
+    export default class Index {
+        constructor() {
+            this.data = {
+                info: {}
+            }
+        }
+        async onLoad() {
+            // do something
+        }
+        methods = {
+            test(){
+                wx.cloud.callFunction({
+                    name: 'getUserInfo',
+                    data: {}
+                }).then(({result}) => {
+                    console.log(result);
+                    this.setData({
+                        info: {
+                            openid: result.openid
+                        }
+                    })
+                }).catch((err) => {
+                    console.warn(err);
+                });
+            }
+        }
+    }
+</script>
+<config>
+    {
+        "navigationBarTitleText": "wxa cloud template"
+    }
+</config>
+<template>
+<view class="text-center">
+    <view class="title">THIS IS WXA CLOUD TEMPLATE.</view>
+    <button bindtap="test">点击</button>
+    <view wx:if="{{info.openid}}">Your openid: {{info.openid}}</view>
+</view>
+</template>
+<style lang="scss" scoped>
+.text-center{
+    text-align: center;
+}
+.title{
+    padding: 100rpx 0 50rpx;
+}
+</style>
