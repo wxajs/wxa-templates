@@ -5,6 +5,9 @@
   "name": "Redux模板，使用redux管理全局状态",
   "value": "redux"
 }, {
+  "name": "Cloud模板, 云开发模板，使用云开发服务开发小程序",
+  "value": "cloud"
+}, {
   "name": "Vant模板, 使用有赞ui加速小程序开发",
   "value": "vant"
 }, {
