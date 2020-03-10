@@ -1,0 +1,13 @@
+[{
+  "name": "基础模板，默认配置文件",
+  "value": "base"
+}, {
+  "name": "Redux模板，使用redux管理全局状态",
+  "value": "redux"
+}, {
+  "name": "Vant模板, 使用有赞ui加速小程序开发",
+  "value": "vant"
+}, {
+  "name": "Echart模板, 使用echart开发小程序图表",
+  "value": "echart"
+}]
